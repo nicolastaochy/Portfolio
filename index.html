@@ -11,45 +11,79 @@
    <!-- Style CSS -->
    <link rel="stylesheet" href="css/styles.css">
 
+   <!-- Font awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <title>Portfolio </title>
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header>
-      <!-- NAVBAR -->
+ <!-- HEADER -->
+    <header class= fond style="background-image: url(img/macbook.jpg); background-repeat: no-repeat; background-size: cover; height: 100%;">
+<!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <!-- <a class="navbar-brand" href="#">Portfolio</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
+            <ul class="nav justify-content-center ">
               <li class="nav-item active">
-                <a class="nav-link text-primary" href="#">Acceuil<span class="sr-only">(current)</span></a>
+                <a class="nav-link text-info" href="#">Acceuil<span class="sr-only">(current)</span></a>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-info" href="#">Mon parcours</a>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Mon parcours</a>
+                <a class="nav-link text-info" href="#">Mon Travail</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Projet</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-primary" href="#">Contact</a>
-                </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link text-info" href="#">Contact</a>
+                </li> -->
             </ul>
           </div>
         </nav>
-       <!-- JUMBOTRON -->
-       <div class="jumbotron bg-fluid" style="background-image: url(img/macbook.jpg); background-size: 100% ">
-          
-          <div class= "container ">
-            <h1 class="display-4 text-primary">Nicolas TAOCHY</h1>
-            <p class="lead text-primary">Développeur Web Junior</p>
+
+<!-- JUMBOTRON -->
+       <div class="jumbotron bg-transparent">
+          <div class= "container " >
+            <h1 class=" text-info ">Nicolas TAOCHY</h1>
+            <h3 class=" text-info">Développeur Web Junior</h3>
           </div>
         </div>
 
+<!-- Card A propos -->
+        <div class= "card bg-light ">
+            <div class= "card-body text-center ">
+              <h1 class="text-info">A propos</h1>
+              <p class = " text-secondary" > Passioné par le monde du numérique et les nouvelles technologies, c'est tout naturellement que je me suis tournée vers cette voie professionel.</p>
+              <p class = "text-secondary" > Après une première expérience réussi dans le milieu associatif dans des fonctions de Community Manager, j'ai souhaité en apprendre davantage sur le fonctionnement des technologies du web. </br> Une formation de 3 mois en développement web m'a permis d'apprendre à concevoir des sites et applications web </p>
+              <p  class = "text-secondary" >Ma rigeur, mon adaptabilité, une veille quotidienne sont parmis les atouts que je souhaite mettre à votre profit.</p>
+            </div>
+          </div>
+
     </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Techno utilisé -->
+      <div class="card bg-light border-0">
+          <div class="card-body text-center pb-5">
+            <h2>Technologies utilisées</h2>
+              <div class= "d-flex justify-content-around pt-5 pb-10">
+                <p> <i class="fab fa-html5 fa-5x"></i> </br> HTML </p>
+                <p> <i class="fab fa-css3-alt fa-5x"></i> </br> CSS </p>
+                <p> <i class="fab fa-js-square fa-5x"></i> </br> JavaScript </p>
+                <p> <i class="fab fa-php fa-5x"></i> </br> PHP </p>
+                <p> <i class="fab fa-github fa-5x"></i> </br> GitHub </p>
+                <p> <i class="fas fa-bold fa-5x"></i> </br> Bootstrap </p>
+              </div>
+
+          </div>
+        </div>
+
+    </main>
 
    
         

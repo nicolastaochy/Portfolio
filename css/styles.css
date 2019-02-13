@@ -1,6 +1,11 @@
-body {
-    background-color: red ;
-    
+body{
+    /* background-color: blue; */
+}
+header{
+    padding-bottom: 0%;
+}
+main{
+    padding-top: 0%;
 }
 
 
