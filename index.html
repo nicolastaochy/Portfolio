@@ -8,18 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
    <!-- Style CSS -->
    <link rel="stylesheet" href="css/styles.css">
 
-   <!-- Font awesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+   
     <title>Portfolio </title>
   </head>
 
   <body>
  <!-- HEADER -->
-    <header class= fond style="background-image: url(img/macbook.jpg); background-repeat: no-repeat; background-size: cover; height: 100%;">
+    <header class= fond style="background-image: linear-gradient( rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3) ), url(img/macbook.jpg); background-repeat: no-repeat; background-size: cover; height: 100%;">
 <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <!-- <a class="navbar-brand" href="#">Portfolio</a>
@@ -31,58 +33,103 @@
               <li class="nav-item active">
                 <a class="nav-link text-info" href="#">Acceuil<span class="sr-only">(current)</span></a>
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link text-info" href="#">Mon parcours</a>
-              </li> -->
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-info" href="#">Mon Travail</a>
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                   <a class="nav-link text-info" href="#">Contact</a>
-                </li> -->
+                </li>
             </ul>
           </div>
         </nav>
-
 <!-- JUMBOTRON -->
+      <section>
        <div class="jumbotron bg-transparent">
           <div class= "container " >
-            <h1 class=" text-info ">Nicolas TAOCHY</h1>
-            <h3 class=" text-info">Développeur Web Junior</h3>
+            <h1 class=" text-info "><span class="badge badge-dark">Nicolas TAOCHY</span></h1>
+            <h3 class=" text-info"><span class="badge badge-dark">Développeur Web Junior</span></h3>
           </div>
         </div>
-
-<!-- Card A propos -->
-        <div class= "card bg-light ">
-            <div class= "card-body text-center ">
-              <h1 class="text-info">A propos</h1>
-              <p class = " text-secondary" > Passioné par le monde du numérique et les nouvelles technologies, c'est tout naturellement que je me suis tournée vers cette voie professionel.</p>
-              <p class = "text-secondary" > Après une première expérience réussi dans le milieu associatif dans des fonctions de Community Manager, j'ai souhaité en apprendre davantage sur le fonctionnement des technologies du web. </br> Une formation de 3 mois en développement web m'a permis d'apprendre à concevoir des sites et applications web </p>
-              <p  class = "text-secondary" >Ma rigeur, mon adaptabilité, une veille quotidienne sont parmis les atouts que je souhaite mettre à votre profit.</p>
-            </div>
+      </section>
+<!-- Section A propos -->
+        <section>
+          <div class= "card bg-light ">
+              <div class= "card-body text-center ">
+                <h1 class="text-info">A propos</h1>
+                <p class = " text-secondary" > Passioné par le monde du numérique et les nouvelles technologies, c'est tout naturellement que je me suis tournée vers cette voie professionel.</p>
+                <p class = "text-secondary" > Après une première expérience réussi dans le milieu associatif dans des fonctions de Community Manager, j'ai souhaité en apprendre davantage sur le fonctionnement des technologies du web. </br> Une formation de 3 mois en développement web m'a permis d'apprendre à concevoir des sites et applications web </p>
+                <p  class = "text-secondary" >Ma rigeur, mon adaptabilité, une veille quotidienne sont parmis les atouts que je souhaite mettre à votre profit.</p>
+              </div>
           </div>
-
+        </section>
     </header>
 
     <!-- Main -->
     <main>
+      <!-- Mon travail -->
 
       <!-- Techno utilisé -->
       <div class="card bg-light border-0">
           <div class="card-body text-center pb-5">
-            <h2>Technologies utilisées</h2>
-              <div class= "d-flex justify-content-around pt-5 pb-10">
-                <p> <i class="fab fa-html5 fa-5x"></i> </br> HTML </p>
+            <h2 class="text-info">Technologies utilisées</h2>
+              <div class= "  d-flex justify-content-around pt-5 pb-10">
+                <p> <i class="fab fa-html5 fa-5x "></i> </br> HTML </p>
                 <p> <i class="fab fa-css3-alt fa-5x"></i> </br> CSS </p>
                 <p> <i class="fab fa-js-square fa-5x"></i> </br> JavaScript </p>
                 <p> <i class="fab fa-php fa-5x"></i> </br> PHP </p>
+                <p> <i class="fas fa-database fa-5x"></i> </br> MySQL </p>
                 <p> <i class="fab fa-github fa-5x"></i> </br> GitHub </p>
                 <p> <i class="fas fa-bold fa-5x"></i> </br> Bootstrap </p>
               </div>
 
           </div>
         </div>
+        <!-- Contact -->
+        <section>
+          <h2 class="text-info">Contact</h2>
+            <form action="" method="post">
+             <div class="container">
+                <div class="row justify-content-around">
+                  <div class="col-4">
+                      <div>
+                          <label for="name"> Prénom </label>
+                          <input type="text" id="prenom" name="user_name">    
+                      </div>
+                  </div>
+                  <div class="col-4">
+                      <div>
+                          <label for="name"> Nom </label>
+                          <input type="text" id="nom" name="user_name">  
+                      </div>
+                  </div>
+                </div>
 
+                <div class="row justify-content-around">
+                  <div class="col-4">
+                      <div>
+                          <label for="mail"> E-mail </label>
+                          <input type="email" id="mail" name="user_mail">
+                      </div>
+                  </div>
+                  <div class="col-4">
+                    <label for="tel"> Téléphone </label>
+                    <input type="tel" id="tel" name="user_tel">
+                  </div>
+                </div>
+              </div>
+ 
+              <div class=" row justify-content-center">
+                <div class="col-4">
+                    <label for="msg"> Message </label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </div>    
+            </div>    
+          </form>
+
+        </section>
     </main>
 
    
